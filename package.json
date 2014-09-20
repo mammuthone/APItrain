@@ -1,0 +1,10 @@
+{
+	"name":"autopsia",
+	"main":"server.js",
+	"dependencies":{
+		"express":"latest",
+		"bodyParser":"latest",
+		"mongoose":"latest",
+		"node-restful":"latest"
+	}
+}
