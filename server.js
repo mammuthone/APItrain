@@ -30,6 +30,13 @@ var products = restful.model('products', ProductSchema);
 products.methods(['get','put','post','delete']);
 products.register(app, '/api/products');
 
+
+app.get('/api/products/ciao', function(){
+	console.log('requested ciao')
+	res.send('Hey you!')
+});
+
 var port = 8090;
 app.listen(port);
+
 console.log('server listening on '+port);
