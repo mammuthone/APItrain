@@ -31,9 +31,9 @@ products.methods(['get','put','post','delete']);
 products.register(app, '/api/products');
 
 
-app.get('/api/products/ciao', function(){
+app.get('/api/products/ciao', function(req, res){
 	console.log('requested ciao')
-	res.send('Hey you!')
+	res.end('Hey you!')
 });
 
 var port = 8090;
