@@ -7,7 +7,10 @@ var http=require('http'),
 
 var app = express();
 
-app.use(bodyParser());
+app.use(bodyParser.urlencoded());
+
+app.use(bodyParser.json());
+
 
 if(mongoose.connect('mongodb://localhost/autopsia'))
 {
